@@ -1,0 +1,507 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.header {
+    background-color: teal;
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+.logo {
+    font-style: bold;
+    font-size: 32px;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.nav-contents {
+    float: right;
+}
+
+.nav-contents a {
+    float: left;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+    padding: 12px;
+    font-size: 18px;
+    border-right: 2px black solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-contents a:last-child {
+    border-right: none;
+}
+
+.trades-link {
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+hr.ho-line {
+    border-top: 2px black solid;
+}
+
+.footer {
+    background-color: teal;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.footer a{
+    padding: 12px;
+    color: black;
+    font-size: 18px;
+}
+
+.icons {
+    float: right;
+    padding-right: 12px;
+}
+
+.TV-logo {
+    width: 100px;
+    height: 50px;
+}
+
+html{
+    overflow: hidden;
+}
+
+/* a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: rgb(78, 78, 1);
+} */
+
+/* hr{
+width: 98%;
+position: relative;
+bottom: 10px;
+right: 10px;
+}   */
+
+#explore{
+    position: absolute;
+    top: 40px;
+    right: 210px;
+    font-weight: bold;
+    color: white;
+}
+
+#login{
+    position: absolute;
+    top: 40px;
+    right: 140px;
+    color: white;
+}
+
+#signup{
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    color: white;
+}
+
+#join-us{
+    position: absolute;
+    top: 120px;
+    left: 15px;
+    font-weight: bold;
+    color: white;
+}
+/* header{
+    background-color: olive;
+    width: 100%;
+    border: 15px solid olive;
+    font-weight: bold;
+    color: white;
+}  */
+
+#logo {
+    position: absolute;
+    top: 100px;
+    font-size: 12px;
+    left: 40px;
+}
+
+header a img{
+    height: 100px;
+    width:100px;
+    position: relative;
+    bottom: 10px;
+left: 10px;
+}
+ 
+#cart{
+    color: white;
+    position: relative;
+    left: 1330px;
+    bottom: 50px;
+}
+/* footer{
+     position: absolute;
+     bottom: 0px;
+    background-color: olive;
+    width: 100%;
+    border: 20px solid olive;
+    color: white;
+    font-weight: bold;
+}  */
+#copy{
+    position: relative;
+    left:10px;
+}
+
+#about{
+    position: relative;
+    left: 30px;
+    color: white;
+}
+
+#contact{
+    position: relative;
+    left: 60px;
+    color: white;
+}
+
+
+/* content styles for all trade files*/
+/* Index file styling*/
+#content{
+    text-align: center;
+    padding: 160px;
+    color: black;
+    font-weight: bold;
+}
+#content p{
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+}    
+
+/* newtrade file styling */
+
+#newtrade-content{
+    position: relative;
+    top: 50px;
+    left: 250px;
+    color: black;
+}
+#newtrade-content button{
+    position: relative;
+    left: 500px;
+    bottom: 10px;
+}
+#newtrade-content label{
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+}
+#newtrade-content input{
+    width: 500px;
+}
+
+#Details-label{
+    position: relative;
+    bottom: 100px;
+}
+
+/* trade file styling */ 
+#trade-content{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+#trade-content img{
+    height: 150px;
+    width: 150px;
+float: center;
+}
+
+#trade-buttons{
+    position: relative;
+    bottom: 280px;
+    left:150px;
+    margin-left: 30px;
+    display: flex;
+    } 
+    #function-buttons{
+        display: flex;
+        position: relative;
+        left: 20px;
+        bottom: 30px;  
+    }
+    .function-buttons{
+        margin-right: 20px;    
+    }
+.trade-buttons{
+    margin-right: 20px;
+}
+
+/*  trades file styling*/
+ #trades-content{
+    position: relative;
+    left: 100px;
+    color: black;
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+} 
+#trades-content li{
+    margin: 10px 0;
+    list-style-type:none;
+}
+
+/* login page stlying*/
+
+#login-content{
+    padding-left: 600px;
+    padding-top: 50px;
+    color: black;
+    
+}
+
+#pwd{
+    position: relative;
+    left: 20px;
+}
+#dont{
+    position: relative;
+    right: 10px;
+}
+.fields input{
+    border: 1px solid black;
+    width: 300px;
+    height: 30px;
+}
+::placeholder{
+    text-align: center;
+}
+.bottom{
+    position: relative;
+    left: 60px;
+}
+.fields button{
+    width: 310px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    height: 30px;
+}
+#login-content hr{
+    width: 480px;
+    color: black;
+    position: relative;
+    right: 300px;
+    top: 5px;
+}
+#already{
+    position: relative;
+    left:50px;
+}
+#by{
+    font-size: 12px;
+    position: relative;
+    left: 30px;
+}
+#h1{
+position: relative;
+right: 160px;
+bottom: 20px;
+}
+
+ /* About page styling */
+ .About-content, .Contact-content, .message-content, .error-content{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+ }
+
+ .about-images img{
+    height: 150px;
+    width: 150px;
+ }
+ .about-images{
+     display: inline-flex;
+     gap: 200px;
+ color: black;
+ position: relative;
+ top:50px;
+ }
+ 
+ /* Contact page styling */
+.message-content{
+    text-align: center;
+    position: relative;
+    top:80px;
+
+}
+.Contact-content form{
+    position: relative;
+    right: 100px;
+}
+.Contact-content label{
+    position: relative;
+   left: 60px;
+}
+
+#anything-label{
+    font-weight: bold;
+    position: relative;
+    left: 115px;
+    bottom: 30px;
+}
+#anything{
+    position: relative;
+    left: 155px;
+}
+.contact-input{
+    position: relative;
+    left: 100px;
+}
+#email-input{
+    position: relative;
+    left: 118px;
+}
+#email-label{
+    position: relative;
+    left: 75px;
+}
+.Contact-content button{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+#cartpage {
+    padding: 20px;
+}
+
+#cartedit-content{
+    color: teal;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#cart-content {
+    padding: 20px;
+}
+
+#quantity{
+    width: 50px;
+}
+
+.success {
+    background: teal;
+    color: #ffff;
+    width: 30%;
+    text-align: center; 
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-left: 600px;
+    position: fixed;
+  }
+
+.error{
+    background: rgba(255, 102, 51, 0.7);
+    color: #ffff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 20px;
+  }
+  #profile-page {
+    color: black;
+    width: 100%;
+    height: 480px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    left: 100px;
+    
+  }
+  
+  table th{
+    border: 1px solid black;
+    background-color: darkgrey;
+  }
+  
+  
+  .function-buttons-profile {
+    display: flex;
+  }
+  
+  #profile-page button {
+    margin-left: 10px;
+  }
+  
+  #manage {
+    display: flex;
+    border: 1px solid teal;
+    width: 300px;
+  }
+  
+  .manage-offer {
+    padding: 20px;
+  }
+
+  #item,
+  #offer {
+    margin-left: 30px;
+  }
+  
+  table td {
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  #manage-page #form {
+    display: flex;
+  }
+
+  #manage-page {
+    padding: 20px;
+  }
+  
+  #form button {
+    margin: 10px;
+    position: relative;
+    left: 350px;
+    bottom: 50px;
+  }
+  
+  #itemtrade-page{
+    position: relative;
+    top: 50px;
+    color: black;
+  }
+  #itemtrade-page table{
+    position: relative;
+    bottom: 10px;
+    left: 300px;
+  }
+  
+  #itemtrade-page h2{
+    position: relative;
+    left: 500px;
+  }
+

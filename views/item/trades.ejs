@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs')%>
+<div id = "trades-content">
+  <%if(items.length){%>
+     <h1 id = "select">Select your model</h1>
+     <%let CategorySet = new Set();%> 
+     <%for(var i = 0; i<items.length;i++){%>
+      <%CategorySet.add(items[i].Category);%>
+     <%}%>
+     <%let CategoryArray = Array.from(CategorySet);%>
+    <%for(var i = 0;i<CategoryArray.length;i++){%>
+        <h2><%= CategoryArray[i]%></h2>
+      <%for(var j=0;j<items.length;j++){%>
+        <%if(items[j].Category === CategoryArray[i]){%>
+         <a href="/items/<%= items[j].id%>"><p><%= items[j].Name%></p></a>
+ 
+        <%}%>
+      <%}%>
+    <%}%>
+        <%}else{%>
+        <p>There are no products to display</p>
+        <%}%>
+</div>
+
+
+<%- include('../partials/footer.ejs')%>

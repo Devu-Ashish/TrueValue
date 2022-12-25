@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>TrueValue</title>
+</head>
+<body>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <div class="header">
+        <a href="/"><img src="/images/TV-logo.png" class="TV-logo" alt=""></a>
+        <div class="nav-contents">
+            <%if(!user){%>
+            <a href="/nav/login">Login</a>  
+            <a href="/nav/signup">Register</a>
+            <a href="/items">Start Trading!</a>
+            <%}else{%>
+            <a href="/items">Start Trading!</a>
+            <a href='/nav/profile'><span id = "profile">Profile</a>
+            <a href='/nav/logout'><span id = "logout">Logout</a>
+            <a href="/nav/cart"><ion-icon name="cart"></ion-icon></a>
+            <a href="/nav/save"><span id = "Wishlist">Saved Trades</span></a>
+            <%}%>
+        </div>
+        <hr class="ho-line">
+        <div class="nav-contents">
+            <a href="/items/new" class="trades-link">Trade Check</a>
+        </div>
+    </div>
+    <%if(successMessages.length>0){%>
+        <%successMessages.forEach(message=>{%>
+        <div class = 'success'>   <%= message%> </div>
+        <%});%>
+    <%};%>
+
+    <%if(errorMessages.length>0){%>
+        <%errorMessages.forEach(message=>{%>
+           <div class = 'error'> <%= message%> </div>
+        <%});%>
+    <%};%>
+</body>
+</html>
